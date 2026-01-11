@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 75" fill="none">
+  <!-- Hull -->
+  <path
+    d="M12 48 Q16 42 25 40 L85 40 Q92 42 96 48 Q88 55 50 55 Q18 55 12 48 Z"
+    fill="#e07850"
+    stroke="#1a2744"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <!-- Cabin -->
+  <path
+    d="M25 40 L28 28 Q32 24 40 23 L72 27 Q78 29 80 33 L85 40 Z"
+    fill="#faf6f1"
+    stroke="#1a2744"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <!-- Deck line -->
+  <path d="M22 40 Q50 43 88 40" stroke="#1a2744" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Bridge -->
+  <path
+    d="M48 23 L48 14 Q48 12 51 12 L58 12 Q61 12 61 14 L61 23"
+    fill="#1a2744"
+    stroke="#1a2744"
+    stroke-width="2"
+  />
+  <!-- Light -->
+  <rect x="50" y="9" width="8" height="4" rx="1" fill="#e07850"/>
+  <!-- Windows -->
+  <path d="M34 28 L40 27 L40 34 L34 34 Z" fill="#1a2744"/>
+  <path d="M46 26 L64 28 L64 35 L46 34 Z" fill="#1a2744"/>
+</svg>

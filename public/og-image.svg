@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#faf6f1"/>
+      <stop offset="100%" stop-color="#f0e9df"/>
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87a7c7" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#3d5a80" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Sun rays effect -->
+  <ellipse cx="600" cy="0" rx="800" ry="400" fill="#f09070" fill-opacity="0.1"/>
+
+  <!-- Wave decoration at bottom -->
+  <path d="M0 520 Q150 500 300 520 T600 520 T900 520 T1200 520 L1200 630 L0 630 Z" fill="#b8d4e8" fill-opacity="0.4"/>
+  <path d="M0 550 Q150 530 300 550 T600 550 T900 550 T1200 550 L1200 630 L0 630 Z" fill="#87a7c7" fill-opacity="0.3"/>
+
+  <!-- Ship - centered and larger -->
+  <g transform="translate(440, 140) scale(1.6)">
+    <!-- Hull -->
+    <path
+      d="M12 48 Q16 42 25 40 L85 40 Q92 42 96 48 Q88 55 50 55 Q18 55 12 48 Z"
+      fill="#e07850"
+      stroke="#1a2744"
+      stroke-width="3"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <!-- Cabin -->
+    <path
+      d="M25 40 L28 28 Q32 24 40 23 L72 27 Q78 29 80 33 L85 40 Z"
+      fill="#faf6f1"
+      stroke="#1a2744"
+      stroke-width="3"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <!-- Deck line -->
+    <path d="M22 40 Q50 43 88 40" stroke="#1a2744" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- Bridge -->
+    <path
+      d="M48 23 L48 14 Q48 12 51 12 L58 12 Q61 12 61 14 L61 23"
+      fill="#1a2744"
+      stroke="#1a2744"
+      stroke-width="2"
+    />
+    <!-- Light -->
+    <rect x="50" y="9" width="8" height="4" rx="1" fill="#e07850"/>
+    <!-- Windows -->
+    <path d="M34 28 L40 27 L40 34 L34 34 Z" fill="#1a2744"/>
+    <path d="M46 26 L64 28 L64 35 L46 34 Z" fill="#1a2744"/>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="380" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="700" fill="#1a2744" text-anchor="middle">Zero to One Day</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="440" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#2d3f5f" text-anchor="middle">Ship a project in one day with Claude Code</text>
+
+  <!-- URL badge -->
+  <rect x="475" y="470" width="250" height="40" rx="20" fill="#e07850"/>
+  <text x="600" y="497" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" fill="white" text-anchor="middle">0to1.dylanbrodeur.org</text>
+</svg>
