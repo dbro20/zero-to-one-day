@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+  --navy: #1a2744;
+  --navy-light: #2d3f5f;
+  --cream: #faf6f1;
+  --cream-dark: #f0e9df;
+  --coral: #e07850;
+  --coral-light: #f09070;
+  --coral-dark: #c85830;
+  --sky: #87a7c7;
+  --sky-light: #b8d4e8;
+  --wave: #3d5a80;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: var(--cream);
+  color: var(--navy);
+}
+
+/* Wavy background pattern */
+.wave-bg {
+  background-color: var(--cream);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23e8e0d5' fill-opacity='0.5' d='M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 200px;
+}
+
+/* Sun rays effect */
+.sun-rays {
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(240, 144, 112, 0.15) 0%, transparent 60%),
+    var(--cream);
+}
+
+/* Retro button style */
+.btn-coral {
+  background-color: var(--coral);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 3px solid var(--navy);
+  box-shadow: 4px 4px 0 var(--navy);
+  transition: all 0.15s ease;
+}
+
+.btn-coral:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--navy);
+}
+
+.btn-coral:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0 0 0 var(--navy);
+}
+
+/* Card style */
+.card-retro {
+  background: white;
+  border: 3px solid var(--navy);
+  border-radius: 1rem;
+  box-shadow: 6px 6px 0 var(--navy);
+}
+
+/* Input style */
+.input-retro {
+  background: white;
+  border: 2px solid var(--navy);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-family: 'Space Grotesk', sans-serif;
+  transition: all 0.15s ease;
+}
+
+.input-retro:focus {
+  outline: none;
+  border-color: var(--coral);
+  box-shadow: 3px 3px 0 var(--coral);
+}
+
+/* Ship icon animation */
+@keyframes sail {
+  0%, 100% { transform: rotate(-2deg) translateY(0); }
+  50% { transform: rotate(2deg) translateY(-4px); }
+}
+
+.sailing {
+  animation: sail 3s ease-in-out infinite;
+}
+
+/* Wave animation */
+@keyframes wave {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-20px); }
+}
+
+.wave-animate {
+  animation: wave 4s ease-in-out infinite;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+  opacity: 0;
+}
