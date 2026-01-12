@@ -20,8 +20,8 @@ export function ProjectGallery() {
         // Prioritize specific creators at the top
         const priorityCreators = ['Dylan Brodeur', 'Wayne Chang', 'Dilly Dally', 'Steen', 'Greg Skriloff'];
         const sortedProjects = [...projectList].sort((a, b) => {
-          const aIndex = priorityCreators.indexOf(a.creatorName);
-          const bIndex = priorityCreators.indexOf(b.creatorName);
+          const aIndex = priorityCreators.indexOf(a.displayName);
+          const bIndex = priorityCreators.indexOf(b.displayName);
           if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
           if (aIndex !== -1) return -1;
           if (bIndex !== -1) return 1;
